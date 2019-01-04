@@ -1,0 +1,49 @@
+2019-01-04 10:27:26,017:INFO main (GameSocketServer.java:107) - start node
+2019-01-04 10:27:26,783:INFO main (JedisUtil.java:76) - redis init. host 127.0.0.1:6379 db 0
+2019-01-04 10:27:27,238:INFO main (ZookeepServer.java:62) - zk create 127.0.0.1:2181
+2019-01-04 10:27:27,548:INFO main (GameSocketServer.java:173) - ============+Game Server is Listing on 192.168.12.86:8068+============
+2019-01-04 10:27:27,549:INFO main (GameSocketServer.java:117) - node启动完毕, 监听端口 8068. 耗时 PT1.534S
+2019-01-04 10:27:29,457:INFO main-EventThread (ZookeepServer.java:296) - 创建一个zookeep节点[/zgame/master/battle],节点信息[{"pool":"battle","serverName":"battle-tim","ip":"192.168.12.86","port":8068,"open":1,"master":true,"sid":101}] ret /zgame/master/battle
+2019-01-04 10:27:29,460:INFO main-EventThread (ZookeepServer.java:134) - ZookeepServer lianjie1
+2019-01-04 10:27:31,538:INFO main-EventThread (ZookeepServer.java:296) - 创建一个zookeep节点[/zgame/node/battle-tim],节点信息[{"pool":"battle","serverName":"battle-tim","ip":"192.168.12.86","port":8068,"open":1,"master":true,"sid":101}] ret /zgame/node/battle-tim
+2019-01-04 10:27:31,539:INFO main-EventThread (ZookeepServer.java:153) - ZookeepServer lianjie2
+2019-01-04 10:27:31,542:INFO main-EventThread (ZookeepServer.java:158) - ZookeepServer lianjie3 routeList size 1
+2019-01-04 10:27:31,575:INFO NioProcessor-7 (RPCHandler.java:60) - Session Created /192.168.12.86:6078
+2019-01-04 10:27:31,576:INFO NioProcessor-7 (RPCHandler.java:54) - Session Opened /192.168.12.86:6078
+2019-01-04 10:27:31,581:INFO main-EventThread (RPCCodecEncoder.java:54) - rpcenc registe server size 187 server {"pool":"battle", "serverName":"battle-tim", "ip":"192.168.12.86", "port":8068, "open":1, "master":true, "sid":101, "session":null}
+2019-01-04 10:28:25,129:ERROR NioProcessor-7 (RPCHandler.java:30) - Session Exception [/192.168.12.86:6078] 远程主机强迫关闭了一个现有的连接。
+2019-01-04 10:28:25,134:INFO NioProcessor-7 (RPCHandler.java:41) - Session Closed [/192.168.12.86:6078]
+2019-01-04 10:38:43,532:INFO main (GameSocketServer.java:107) - start node
+2019-01-04 10:38:44,467:INFO main (JedisUtil.java:76) - redis init. host 127.0.0.1:6379 db 0
+2019-01-04 10:38:45,046:INFO main (ZookeepServer.java:62) - zk create 127.0.0.1:2181
+2019-01-04 10:38:45,401:INFO main (GameSocketServer.java:173) - ============+Game Server is Listing on 192.168.12.86:8068+============
+2019-01-04 10:38:45,403:INFO main (GameSocketServer.java:117) - node启动完毕, 监听端口 8068. 耗时 PT1.872S
+2019-01-04 10:38:47,268:INFO main-EventThread (ZookeepServer.java:296) - 创建一个zookeep节点[/zgame/master/battle],节点信息[{"pool":"battle","serverName":"battle-tim","ip":"192.168.12.86","port":8068,"open":1,"master":true,"sid":101}] ret /zgame/master/battle
+2019-01-04 10:38:47,271:INFO main-EventThread (ZookeepServer.java:134) - ZookeepServer lianjie1
+2019-01-04 10:38:49,282:INFO main-EventThread (ZookeepServer.java:296) - 创建一个zookeep节点[/zgame/node/battle-tim],节点信息[{"pool":"battle","serverName":"battle-tim","ip":"192.168.12.86","port":8068,"open":1,"master":true,"sid":101}] ret /zgame/node/battle-tim
+2019-01-04 10:38:49,283:INFO main-EventThread (ZookeepServer.java:153) - ZookeepServer lianjie2
+2019-01-04 10:38:49,286:INFO main-EventThread (ZookeepServer.java:158) - ZookeepServer lianjie3 routeList size 1
+2019-01-04 10:38:49,324:INFO NioProcessor-7 (RPCHandler.java:60) - Session Created /192.168.12.86:6078
+2019-01-04 10:38:49,324:INFO NioProcessor-7 (RPCHandler.java:54) - Session Opened /192.168.12.86:6078
+2019-01-04 10:38:49,331:INFO main-EventThread (RPCCodecEncoder.java:54) - rpcenc registe server size 187 server {"pool":"battle", "serverName":"battle-tim", "ip":"192.168.12.86", "port":8068, "open":1, "master":true, "sid":101, "session":null}
+2019-01-04 10:39:45,468:INFO x3-task-1-t-1 (GameSource.java:79) - gs online teams. sid 101 online 0 offline 0 gc 0
+2019-01-04 10:39:45,480:INFO x3-task-1-t-2 (GameSource.java:70) - gs full. sid 101 charset zh debug false name battle-tim zk /zgame pool battle addr ftxgame.com platform ios opentime 2019-01-04T10:38:43.432+08:00 net true stat true job true gm false open true
+2019-01-04 10:40:12,554:ERROR NioProcessor-7 (RPCHandler.java:30) - Session Exception [/192.168.12.86:6078] 远程主机强迫关闭了一个现有的连接。
+2019-01-04 10:40:12,554:INFO NioProcessor-7 (RPCHandler.java:41) - Session Closed [/192.168.12.86:6078]
+2019-01-04 10:47:51,087:INFO main (GameSocketServer.java:107) - start node
+2019-01-04 10:47:51,776:INFO main (JedisUtil.java:76) - redis init. host 127.0.0.1:6379 db 0
+2019-01-04 10:47:52,253:INFO main (ZookeepServer.java:62) - zk create 127.0.0.1:2181
+2019-01-04 10:47:52,516:INFO main (GameSocketServer.java:173) - ============+Game Server is Listing on 192.168.12.86:8068+============
+2019-01-04 10:47:52,517:INFO main (GameSocketServer.java:117) - node启动完毕, 监听端口 8068. 耗时 PT1.432S
+2019-01-04 10:47:54,359:INFO main-EventThread (ZookeepServer.java:296) - 创建一个zookeep节点[/zgame/master/battle],节点信息[{"pool":"battle","serverName":"battle-hzone","ip":"192.168.12.86","port":8068,"open":1,"master":true,"sid":101}] ret /zgame/master/battle
+2019-01-04 10:47:54,361:INFO main-EventThread (ZookeepServer.java:134) - ZookeepServer lianjie1
+2019-01-04 10:47:56,374:INFO main-EventThread (ZookeepServer.java:296) - 创建一个zookeep节点[/zgame/node/battle-hzone],节点信息[{"pool":"battle","serverName":"battle-hzone","ip":"192.168.12.86","port":8068,"open":1,"master":true,"sid":101}] ret /zgame/node/battle-hzone
+2019-01-04 10:47:56,374:INFO main-EventThread (ZookeepServer.java:153) - ZookeepServer lianjie2
+2019-01-04 10:47:56,379:INFO main-EventThread (ZookeepServer.java:158) - ZookeepServer lianjie3 routeList size 1
+2019-01-04 10:47:56,430:INFO NioProcessor-7 (RPCHandler.java:60) - Session Created /192.168.12.86:6078
+2019-01-04 10:47:56,431:INFO NioProcessor-7 (RPCHandler.java:54) - Session Opened /192.168.12.86:6078
+2019-01-04 10:47:56,437:INFO main-EventThread (RPCCodecEncoder.java:54) - rpcenc registe server size 189 server {"pool":"battle", "serverName":"battle-hzone", "ip":"192.168.12.86", "port":8068, "open":1, "master":true, "sid":101, "session":null}
+2019-01-04 10:48:52,466:INFO x3-task-1-t-2 (GameSource.java:79) - gs online teams. sid 101 online 0 offline 0 gc 0
+2019-01-04 10:48:52,474:INFO x3-task-1-t-1 (GameSource.java:70) - gs full. sid 101 charset zh debug false name battle-hzone zk /zgame pool battle addr ftxgame.com platform ios opentime 2019-01-04T10:47:51.007+08:00 net true stat true job true gm false open true
+2019-01-04 10:49:15,977:ERROR NioProcessor-7 (RPCHandler.java:30) - Session Exception [/192.168.12.86:6078] 远程主机强迫关闭了一个现有的连接。
+2019-01-04 10:49:15,978:INFO NioProcessor-7 (RPCHandler.java:41) - Session Closed [/192.168.12.86:6078]

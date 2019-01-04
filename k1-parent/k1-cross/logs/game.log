@@ -1,0 +1,39 @@
+2019-01-04 10:37:19,102:INFO main (GameSocketServer.java:107) - start node
+2019-01-04 10:38:15,225:INFO main (GameSocketServer.java:107) - start node
+2019-01-04 10:38:15,836:INFO main (JedisUtil.java:76) - redis init. host 127.0.0.1:6379 db 0
+2019-01-04 10:38:52,936:INFO main (GameSocketServer.java:107) - start node
+2019-01-04 10:38:53,873:INFO main (JedisUtil.java:76) - redis init. host 127.0.0.1:6379 db 0
+2019-01-04 10:38:54,366:INFO main (ZookeepServer.java:62) - zk create 127.0.0.1:2181
+2019-01-04 10:38:54,688:INFO main (GameSocketServer.java:173) - ============+Game Server is Listing on 192.168.12.86:8069+============
+2019-01-04 10:38:54,690:INFO main (GameSocketServer.java:117) - node启动完毕, 监听端口 8069. 耗时 PT1.757S
+2019-01-04 10:38:56,536:INFO main-EventThread (ZookeepServer.java:296) - 创建一个zookeep节点[/zgame/master/cross],节点信息[{"pool":"cross","serverName":"cross-hzone","ip":"192.168.12.86","port":8069,"open":1,"master":true,"sid":101}] ret /zgame/master/cross
+2019-01-04 10:38:56,538:INFO main-EventThread (ZookeepServer.java:134) - ZookeepServer lianjie1
+2019-01-04 10:38:58,548:INFO main-EventThread (ZookeepServer.java:296) - 创建一个zookeep节点[/zgame/node/cross-hzone],节点信息[{"pool":"cross","serverName":"cross-hzone","ip":"192.168.12.86","port":8069,"open":1,"master":true,"sid":101}] ret /zgame/node/cross-hzone
+2019-01-04 10:38:58,549:INFO main-EventThread (ZookeepServer.java:153) - ZookeepServer lianjie2
+2019-01-04 10:38:58,552:INFO main-EventThread (ZookeepServer.java:158) - ZookeepServer lianjie3 routeList size 1
+2019-01-04 10:38:58,558:INFO main-EventThread (RPCMessageManager.java:49) - test zk server is open true
+2019-01-04 10:38:58,586:INFO NioProcessor-7 (RPCHandler.java:60) - Session Created /192.168.12.86:6078
+2019-01-04 10:38:58,587:INFO NioProcessor-7 (RPCHandler.java:54) - Session Opened /192.168.12.86:6078
+2019-01-04 10:38:58,588:INFO main-EventThread (RPCMessageManager.java:79) - RPCServer new conn host 192.168.12.86:6078
+2019-01-04 10:38:58,589:INFO main-EventThread (RPCMessageManager.java:85) - RPCServer register server {"pool":"route", "serverName":"route-dev", "ip":"192.168.12.86", "port":6078, "open":1, "master":false, "sid":101, "session":(0x00000001: nio socket, client, /192.168.12.86:50460 => /192.168.12.86:6078)} local {"pool":"cross", "serverName":"cross-hzone", "ip":"192.168.12.86", "port":8069, "open":1, "master":true, "sid":101, "session":null}
+2019-01-04 10:38:58,594:INFO main-EventThread (RPCCodecEncoder.java:54) - rpcenc registe server size 187 server {"pool":"cross", "serverName":"cross-hzone", "ip":"192.168.12.86", "port":8069, "open":1, "master":true, "sid":101, "session":null}
+2019-01-04 10:39:54,760:INFO x3-task-1-t-2 (GameSource.java:79) - gs online teams. sid 101 online 0 offline 0 gc 0
+2019-01-04 10:39:54,773:INFO x3-task-1-t-1 (GameSource.java:70) - gs full. sid 101 charset zh debug false name cross-hzone zk /zgame pool cross addr ftxgame.com platform ios opentime 2019-01-04T10:38:52.849+08:00 net true stat true job true gm false open true
+2019-01-04 10:47:57,370:INFO main (GameSocketServer.java:107) - start node
+2019-01-04 10:47:58,116:INFO main (JedisUtil.java:76) - redis init. host 127.0.0.1:6379 db 0
+2019-01-04 10:47:58,607:INFO main (ZookeepServer.java:62) - zk create 127.0.0.1:2181
+2019-01-04 10:47:58,887:INFO main (GameSocketServer.java:173) - ============+Game Server is Listing on 192.168.12.86:8069+============
+2019-01-04 10:47:58,888:INFO main (GameSocketServer.java:117) - node启动完毕, 监听端口 8069. 耗时 PT1.52S
+2019-01-04 10:48:00,723:INFO main-EventThread (ZookeepServer.java:296) - 创建一个zookeep节点[/zgame/master/cross],节点信息[{"pool":"cross","serverName":"cross-hzone","ip":"192.168.12.86","port":8069,"open":1,"master":true,"sid":101}] ret /zgame/master/cross
+2019-01-04 10:48:00,725:INFO main-EventThread (ZookeepServer.java:134) - ZookeepServer lianjie1
+2019-01-04 10:48:02,732:INFO main-EventThread (ZookeepServer.java:296) - 创建一个zookeep节点[/zgame/node/cross-hzone],节点信息[{"pool":"cross","serverName":"cross-hzone","ip":"192.168.12.86","port":8069,"open":1,"master":true,"sid":101}] ret /zgame/node/cross-hzone
+2019-01-04 10:48:02,732:INFO main-EventThread (ZookeepServer.java:153) - ZookeepServer lianjie2
+2019-01-04 10:48:02,736:INFO main-EventThread (ZookeepServer.java:158) - ZookeepServer lianjie3 routeList size 1
+2019-01-04 10:48:02,742:INFO main-EventThread (RPCMessageManager.java:49) - test zk server is open true
+2019-01-04 10:48:02,774:INFO NioProcessor-7 (RPCHandler.java:60) - Session Created /192.168.12.86:6078
+2019-01-04 10:48:02,774:INFO main-EventThread (RPCMessageManager.java:79) - RPCServer new conn host 192.168.12.86:6078
+2019-01-04 10:48:02,775:INFO NioProcessor-7 (RPCHandler.java:54) - Session Opened /192.168.12.86:6078
+2019-01-04 10:48:02,775:INFO main-EventThread (RPCMessageManager.java:85) - RPCServer register server {"pool":"route", "serverName":"route-dev", "ip":"192.168.12.86", "port":6078, "open":1, "master":false, "sid":101, "session":(0x00000001: nio socket, client, /192.168.12.86:50736 => /192.168.12.86:6078)} local {"pool":"cross", "serverName":"cross-hzone", "ip":"192.168.12.86", "port":8069, "open":1, "master":true, "sid":101, "session":null}
+2019-01-04 10:48:02,781:INFO main-EventThread (RPCCodecEncoder.java:54) - rpcenc registe server size 187 server {"pool":"cross", "serverName":"cross-hzone", "ip":"192.168.12.86", "port":8069, "open":1, "master":true, "sid":101, "session":null}
+2019-01-04 10:48:58,814:INFO x3-task-1-t-1 (GameSource.java:79) - gs online teams. sid 101 online 0 offline 0 gc 0
+2019-01-04 10:48:58,825:INFO x3-task-1-t-2 (GameSource.java:70) - gs full. sid 101 charset zh debug false name cross-hzone zk /zgame pool cross addr ftxgame.com platform ios opentime 2019-01-04T10:47:57.291+08:00 net true stat true job true gm false open true
