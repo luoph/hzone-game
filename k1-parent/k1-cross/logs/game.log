@@ -37,3 +37,21 @@
 2019-01-04 10:48:02,781:INFO main-EventThread (RPCCodecEncoder.java:54) - rpcenc registe server size 187 server {"pool":"cross", "serverName":"cross-hzone", "ip":"192.168.12.86", "port":8069, "open":1, "master":true, "sid":101, "session":null}
 2019-01-04 10:48:58,814:INFO x3-task-1-t-1 (GameSource.java:79) - gs online teams. sid 101 online 0 offline 0 gc 0
 2019-01-04 10:48:58,825:INFO x3-task-1-t-2 (GameSource.java:70) - gs full. sid 101 charset zh debug false name cross-hzone zk /zgame pool cross addr ftxgame.com platform ios opentime 2019-01-04T10:47:57.291+08:00 net true stat true job true gm false open true
+2019-01-04 11:24:25,584:INFO main (GameSocketServer.java:107) - start node
+2019-01-04 11:24:26,506:INFO main (JedisUtil.java:76) - redis init. host 127.0.0.1:6379 db 0
+2019-01-04 11:24:27,161:INFO main (ZookeepServer.java:62) - zk create 127.0.0.1:2181
+2019-01-04 11:24:27,467:INFO main (GameSocketServer.java:173) - ============+Game Server is Listing on 192.168.12.86:8069+============
+2019-01-04 11:24:27,469:INFO main (GameSocketServer.java:117) - node启动完毕, 监听端口 8069. 耗时 PT1.887S
+2019-01-04 11:24:29,259:INFO main-EventThread (ZookeepServer.java:296) - 创建一个zookeep节点[/zgame/master/cross],节点信息[{"pool":"cross","serverName":"cross-hzone","ip":"192.168.12.86","port":8069,"open":1,"master":true,"sid":101}] ret /zgame/master/cross
+2019-01-04 11:24:29,263:INFO main-EventThread (ZookeepServer.java:134) - ZookeepServer lianjie1
+2019-01-04 11:24:31,266:INFO main-EventThread (ZookeepServer.java:296) - 创建一个zookeep节点[/zgame/node/cross-hzone],节点信息[{"pool":"cross","serverName":"cross-hzone","ip":"192.168.12.86","port":8069,"open":1,"master":true,"sid":101}] ret /zgame/node/cross-hzone
+2019-01-04 11:24:31,266:INFO main-EventThread (ZookeepServer.java:153) - ZookeepServer lianjie2
+2019-01-04 11:24:31,269:INFO main-EventThread (ZookeepServer.java:158) - ZookeepServer lianjie3 routeList size 1
+2019-01-04 11:24:31,276:INFO main-EventThread (RPCMessageManager.java:49) - test zk server is open true
+2019-01-04 11:24:31,309:INFO NioProcessor-7 (RPCHandler.java:60) - Session Created /192.168.12.86:6078
+2019-01-04 11:24:31,310:INFO NioProcessor-7 (RPCHandler.java:54) - Session Opened /192.168.12.86:6078
+2019-01-04 11:24:31,310:INFO main-EventThread (RPCMessageManager.java:79) - RPCServer new conn host 192.168.12.86:6078
+2019-01-04 11:24:31,310:INFO main-EventThread (RPCMessageManager.java:85) - RPCServer register server {"pool":"route", "serverName":"route-dev", "ip":"192.168.12.86", "port":6078, "open":1, "master":false, "sid":101, "session":(0x00000001: nio socket, client, /192.168.12.86:51324 => /192.168.12.86:6078)} local {"pool":"cross", "serverName":"cross-hzone", "ip":"192.168.12.86", "port":8069, "open":1, "master":true, "sid":101, "session":null}
+2019-01-04 11:24:31,317:INFO main-EventThread (RPCCodecEncoder.java:54) - rpcenc registe server size 187 server {"pool":"cross", "serverName":"cross-hzone", "ip":"192.168.12.86", "port":8069, "open":1, "master":true, "sid":101, "session":null}
+2019-01-04 11:24:53,323:ERROR NioProcessor-7 (RPCHandler.java:30) - Session Exception [/192.168.12.86:6078] 远程主机强迫关闭了一个现有的连接。
+2019-01-04 11:24:53,324:INFO NioProcessor-7 (RPCHandler.java:41) - Session Closed [/192.168.12.86:6078]

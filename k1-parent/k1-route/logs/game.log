@@ -94,3 +94,41 @@ java.io.IOException: 远程主机强迫关闭了一个现有的连接。
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [?:1.8.0_66]
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [?:1.8.0_66]
 	at java.lang.Thread.run(Thread.java:745) [?:1.8.0_66]
+2019-01-04 11:23:54,816:INFO main (JedisUtil.java:76) - redis init. host 127.0.0.1:6379 db 1
+2019-01-04 11:23:55,480:INFO main (GameSocketServer.java:173) - ============+Game Server is Listing on 192.168.12.86:6078+============
+2019-01-04 11:23:57,603:INFO main (ZookeepServer.java:62) - zk create 127.0.0.1:2181
+2019-01-04 11:23:59,689:INFO main-EventThread (ZookeepServer.java:296) - 创建一个zookeep节点[/zgame/route/route-dev],节点信息[{"pool":"route","serverName":"route-dev","ip":"192.168.12.86","port":6078,"open":1,"master":false,"sid":101}] ret /zgame/route/route-dev
+2019-01-04 11:23:59,689:INFO main-EventThread (ZookeepServer.java:222) - 路由ZK启动---->null
+2019-01-04 11:24:12,111:INFO NioProcessor-2 (RouteIoHandlerAdapter.java:64) - Session Created [(0x00000001: nio socket, server, /192.168.12.86:51204 => /192.168.12.86:6078)]
+2019-01-04 11:24:12,116:INFO x3_worker-10-t-1 (RouteIoHandlerAdapter.java:58) - Session Opened [(0x00000001: nio socket, server, /192.168.12.86:51204 => /192.168.12.86:6078)]
+2019-01-04 11:24:12,134:INFO x3_worker-10-t-2 (RouteServerManager.java:128) - 节点注册开始--->{"pool":"logic", "serverName":"logic-3108", "ip":"192.168.12.86", "port":7038, "open":1, "master":true, "sid":101, "session":(0x00000001: nio socket, server, /192.168.12.86:51204 => /192.168.12.86:6078)}
+2019-01-04 11:24:23,304:INFO NioProcessor-3 (RouteIoHandlerAdapter.java:64) - Session Created [(0x00000002: nio socket, server, /192.168.12.86:51264 => /192.168.12.86:6078)]
+2019-01-04 11:24:23,306:INFO x3_worker-10-t-7 (RouteIoHandlerAdapter.java:58) - Session Opened [(0x00000002: nio socket, server, /192.168.12.86:51264 => /192.168.12.86:6078)]
+2019-01-04 11:24:23,324:INFO x3_worker-10-t-8 (RouteServerManager.java:128) - 节点注册开始--->{"pool":"battle", "serverName":"battle-hzone", "ip":"192.168.12.86", "port":8068, "open":1, "master":true, "sid":101, "session":(0x00000002: nio socket, server, /192.168.12.86:51264 => /192.168.12.86:6078)}
+2019-01-04 11:24:31,296:INFO NioProcessor-4 (RouteIoHandlerAdapter.java:64) - Session Created [(0x00000003: nio socket, server, /192.168.12.86:51324 => /192.168.12.86:6078)]
+2019-01-04 11:24:31,297:INFO x3_worker-10-t-5 (RouteIoHandlerAdapter.java:58) - Session Opened [(0x00000003: nio socket, server, /192.168.12.86:51324 => /192.168.12.86:6078)]
+2019-01-04 11:24:31,320:INFO x3_worker-10-t-6 (RouteServerManager.java:128) - 节点注册开始--->{"pool":"cross", "serverName":"cross-hzone", "ip":"192.168.12.86", "port":8069, "open":1, "master":true, "sid":101, "session":(0x00000003: nio socket, server, /192.168.12.86:51324 => /192.168.12.86:6078)}
+2019-01-04 11:24:52,165:INFO x3_worker-10-t-4 (RouteIoHandlerAdapter.java:45) - Session Closed [(0x00000001: nio socket, server, null => 0.0.0.0/0.0.0.0:6078)]
+2019-01-04 11:24:52,164:ERROR x3_worker-10-t-3 (RouteIoHandlerAdapter.java:35) - Session Exception (0x00000001: nio socket, server, null => 0.0.0.0/0.0.0.0:6078)
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method) ~[?:1.8.0_66]
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43) ~[?:1.8.0_66]
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223) ~[?:1.8.0_66]
+	at sun.nio.ch.IOUtil.read(IOUtil.java:197) ~[?:1.8.0_66]
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380) ~[?:1.8.0_66]
+	at org.apache.mina.transport.socket.nio.NioProcessor.read(NioProcessor.java:378) ~[mina-core-2.0.19.jar:?]
+	at org.apache.mina.transport.socket.nio.NioProcessor.read(NioProcessor.java:47) ~[mina-core-2.0.19.jar:?]
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.read(AbstractPollingIoProcessor.java:519) ~[mina-core-2.0.19.jar:?]
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor.access$1200(AbstractPollingIoProcessor.java:68) ~[mina-core-2.0.19.jar:?]
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor$Processor.process(AbstractPollingIoProcessor.java:1242) ~[mina-core-2.0.19.jar:?]
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor$Processor.process(AbstractPollingIoProcessor.java:1231) ~[mina-core-2.0.19.jar:?]
+	at org.apache.mina.core.polling.AbstractPollingIoProcessor$Processor.run(AbstractPollingIoProcessor.java:683) ~[mina-core-2.0.19.jar:?]
+	at org.apache.mina.util.NamePreservingRunnable.run(NamePreservingRunnable.java:64) ~[mina-core-2.0.19.jar:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [?:1.8.0_66]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [?:1.8.0_66]
+	at java.lang.Thread.run(Thread.java:745) [?:1.8.0_66]
+2019-01-04 11:29:01,998:INFO main (JedisUtil.java:76) - redis init. host 127.0.0.1:6379 db 1
+2019-01-04 11:29:02,716:INFO main (GameSocketServer.java:173) - ============+Game Server is Listing on 192.168.12.86:6078+============
+2019-01-04 11:29:04,841:INFO main (ZookeepServer.java:62) - zk create 127.0.0.1:2181
+2019-01-04 11:29:06,938:INFO main-EventThread (ZookeepServer.java:296) - 创建一个zookeep节点[/zgame/route/route-dev],节点信息[{"pool":"route","serverName":"route-dev","ip":"192.168.12.86","port":6078,"open":1,"master":false,"sid":101}] ret /zgame/route/route-dev
+2019-01-04 11:29:06,938:INFO main-EventThread (ZookeepServer.java:222) - 路由ZK启动---->null

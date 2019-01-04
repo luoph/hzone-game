@@ -73,12 +73,12 @@ public class GameRouteStartup {
 
             @Override
             public String getManagerPackgePath() {
-                return "com.ftkj.manager";
+                return "com.hzone.manager";
             }
 
             @Override
             public String getCommonPackgePath() {
-                return "com.ftkj";
+                return "com.hzone";
             }
 
             @Override
