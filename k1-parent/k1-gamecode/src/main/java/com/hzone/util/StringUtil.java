@@ -1,15 +1,18 @@
 package com.hzone.util;
 
-import org.joda.time.DateTime;
-
 import java.io.PrintWriter;
 import java.io.StringWriter;
 import java.net.URL;
 import java.util.Arrays;
 import java.util.Date;
+import java.util.LinkedHashMap;
 import java.util.List;
+import java.util.Map;
 import java.util.function.Function;
+import java.util.function.Supplier;
 import java.util.stream.Stream;
+
+import org.joda.time.DateTime;
 
 /**
  * 字符串工具
@@ -45,7 +48,12 @@ public class StringUtil {
      */
     public static String DEFAULT_FH = "[:]";
     private static final String[] EMPTY = {};
-
+    
+    public final static Function<String, Integer> toInt = str -> (str == null || str.trim().isEmpty()) ? 0 : Integer.parseInt(str);
+    public final static Function<String, Long> toLong = str -> (str == null || str.trim().isEmpty()) ? 0 : Long.parseLong(str);
+    public final static Function<String, Float> toFloat = str -> (str == null || str.trim().isEmpty()) ? 0f : Float.parseFloat(str);
+    public final static Function<String, String> toStr = Function.identity();
+   
     public static int[] toIntArray(String str, String sp) {
         if ("".equals(str) || str == null) {
             return new int[0];
@@ -327,8 +335,56 @@ public class StringUtil {
                 .append(se.getFileName()).append(":").append(se.getLineNumber())
                 .append(")\n");
         }
-
         return sb.toString();
     }
+    
+    //======================== map ==============================
 
+    /** 分割字符串为 map[int, int]. 字符串格式: k1:v1,k2:v2,k3:v3, */
+    public static Map<Integer, Integer> splitToIntMap(String str) {
+        return splitToMap(str, toInt, toInt);
+    }
+
+    /** 分割字符串为 map[str, int]. 字符串格式: k1:v1,k2:v2,k3:v3, */
+    public static Map<String, Integer> splitToStrIntMap(String str) {
+        return splitToMap(str, toStr, toInt);
+    }
+
+    /** 分割字符串为 map[K, V]. 字符串格式: k1:v1,k2:v2,k3:v3, */
+    public static <K, V> Map<K, V> splitToMap(String str, Function<String, K> keyMapper, Function<String, V> vMapper) {
+        return splitToMap(str, keyMapper, vMapper, LinkedHashMap::new);
+    }
+
+    /** 分割字符串为 map[K, V]. 字符串格式: k1:v1,k2:v2,k3:v3, */
+    public static <K, V, M extends Map<K, V>> M splitToMap(String str,
+                                                           Function<String, K> keyMapper,
+                                                           Function<String, V> vMapper,
+                                                           Supplier<M> mapSupplier) {
+        if (str == null || str.isEmpty()) {
+            return mapSupplier.get();
+        }
+        String[] arr0 = str.split(",");
+        M map = mapSupplier.get();
+        for (String s1 : arr0) {
+            String[] arr1 = s1.split(":");
+            map.put(keyMapper.apply(arr1[0]),
+                vMapper.apply(arr1[1]));
+        }
+        return map;
+    }
+
+    /** 分割字符串为 map[K, V]. 字符串格式: k1:v1,k2:v2,k3:v3, */
+    public static <K, V, M extends Map<K, V>> String mapToString(M map,
+                                                                 Function<K, String> keyMapper,
+                                                                 Function<V, String> vMapper) {
+        if (map == null || map.isEmpty()) {
+            return "";
+        }
+        StringBuilder sb = new StringBuilder();
+        map.forEach((k, v) -> {
+            sb.append(keyMapper.apply(k)).append(COLON)
+                .append(vMapper.apply(v)).append(COMMA);
+        });
+        return sb.toString();
+    }
 }

@@ -18,6 +18,7 @@
   
    <artifactId>k1-common</artifactId>
    <packaging>jar</packaging>
+   
    <dependencies>
         <dependency>
 			<groupId>com.zonehe.k1</groupId>

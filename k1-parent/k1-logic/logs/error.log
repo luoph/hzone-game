@@ -1,2 +1,64 @@
-2019-01-04 10:40:12,552:ERROR NioProcessor-7 (RPCHandler.java:30) - Session Exception [/192.168.12.86:6078] 远程主机强迫关闭了一个现有的连接。
-2019-01-04 10:49:15,976:ERROR NioProcessor-7 (RPCHandler.java:30) - Session Exception [/192.168.12.86:6078] 远程主机强迫关闭了一个现有的连接。
+2019-01-07 11:55:18,859:ERROR main (InstanceFactory.java:215) - InstanceFactory-getInstance: com.hzone.db.ao.common.INBADataAO
+java.lang.InstantiationException: com.hzone.db.ao.common.INBADataAO
+	at java.lang.Class.newInstance(Class.java:427) ~[?:1.8.0_66]
+	at com.hzone.server.instance.InstanceFactory.getInstance(InstanceFactory.java:211) [classes/:?]
+	at com.hzone.server.instance.InstanceFactory.executAfter(InstanceFactory.java:114) [classes/:?]
+	at com.hzone.server.instance.InitServer.init(InitServer.java:51) [classes/:?]
+	at com.hzone.server.socket.GameSocketServer.main_init_socket(GameSocketServer.java:135) [classes/:?]
+	at com.hzone.server.socket.GameSocketServer.startNode(GameSocketServer.java:116) [classes/:?]
+	at com.hzone.GameStartup.main(GameStartup.java:117) [classes/:?]
+Caused by: java.lang.NoSuchMethodException: com.hzone.db.ao.common.INBADataAO.<init>()
+	at java.lang.Class.getConstructor0(Class.java:3082) ~[?:1.8.0_66]
+	at java.lang.Class.newInstance(Class.java:412) ~[?:1.8.0_66]
+	... 6 more
+2019-01-07 11:55:18,875:ERROR main (GameStartup.java:119) - java.lang.InstantiationException: com.hzone.db.ao.common.INBADataAO
+java.lang.RuntimeException: java.lang.InstantiationException: com.hzone.db.ao.common.INBADataAO
+	at com.hzone.server.instance.InstanceFactory.getInstance(InstanceFactory.java:216) ~[classes/:?]
+	at com.hzone.server.instance.InstanceFactory.executAfter(InstanceFactory.java:114) ~[classes/:?]
+	at com.hzone.server.instance.InitServer.init(InitServer.java:51) ~[classes/:?]
+	at com.hzone.server.socket.GameSocketServer.main_init_socket(GameSocketServer.java:135) ~[classes/:?]
+	at com.hzone.server.socket.GameSocketServer.startNode(GameSocketServer.java:116) ~[classes/:?]
+	at com.hzone.GameStartup.main(GameStartup.java:117) [classes/:?]
+Caused by: java.lang.InstantiationException: com.hzone.db.ao.common.INBADataAO
+	at java.lang.Class.newInstance(Class.java:427) ~[?:1.8.0_66]
+	at com.hzone.server.instance.InstanceFactory.getInstance(InstanceFactory.java:211) ~[classes/:?]
+	... 5 more
+Caused by: java.lang.NoSuchMethodException: com.hzone.db.ao.common.INBADataAO.<init>()
+	at java.lang.Class.getConstructor0(Class.java:3082) ~[?:1.8.0_66]
+	at java.lang.Class.newInstance(Class.java:412) ~[?:1.8.0_66]
+	at com.hzone.server.instance.InstanceFactory.getInstance(InstanceFactory.java:211) ~[classes/:?]
+	... 5 more
+2019-01-07 11:57:27,400:ERROR main (InstanceFactory.java:215) - InstanceFactory-getInstance: com.hzone.db.ao.common.INBADataAO
+java.lang.InstantiationException: com.hzone.db.ao.common.INBADataAO
+	at java.lang.Class.newInstance(Class.java:427) ~[?:1.8.0_66]
+	at com.hzone.server.instance.InstanceFactory.getInstance(InstanceFactory.java:211) [classes/:?]
+	at com.hzone.server.instance.InstanceFactory.executAfter(InstanceFactory.java:114) [classes/:?]
+	at com.hzone.server.instance.InitServer.init(InitServer.java:51) [classes/:?]
+	at com.hzone.server.socket.GameSocketServer.main_init_socket(GameSocketServer.java:135) [classes/:?]
+	at com.hzone.server.socket.GameSocketServer.startNode(GameSocketServer.java:116) [classes/:?]
+	at com.hzone.GameStartup.main(GameStartup.java:117) [classes/:?]
+Caused by: java.lang.NoSuchMethodException: com.hzone.db.ao.common.INBADataAO.<init>()
+	at java.lang.Class.getConstructor0(Class.java:3082) ~[?:1.8.0_66]
+	at java.lang.Class.newInstance(Class.java:412) ~[?:1.8.0_66]
+	... 6 more
+2019-01-07 11:57:27,425:ERROR main (GameStartup.java:119) - java.lang.InstantiationException: com.hzone.db.ao.common.INBADataAO
+java.lang.RuntimeException: java.lang.InstantiationException: com.hzone.db.ao.common.INBADataAO
+	at com.hzone.server.instance.InstanceFactory.getInstance(InstanceFactory.java:216) ~[classes/:?]
+	at com.hzone.server.instance.InstanceFactory.executAfter(InstanceFactory.java:114) ~[classes/:?]
+	at com.hzone.server.instance.InitServer.init(InitServer.java:51) ~[classes/:?]
+	at com.hzone.server.socket.GameSocketServer.main_init_socket(GameSocketServer.java:135) ~[classes/:?]
+	at com.hzone.server.socket.GameSocketServer.startNode(GameSocketServer.java:116) ~[classes/:?]
+	at com.hzone.GameStartup.main(GameStartup.java:117) [classes/:?]
+Caused by: java.lang.InstantiationException: com.hzone.db.ao.common.INBADataAO
+	at java.lang.Class.newInstance(Class.java:427) ~[?:1.8.0_66]
+	at com.hzone.server.instance.InstanceFactory.getInstance(InstanceFactory.java:211) ~[classes/:?]
+	... 5 more
+Caused by: java.lang.NoSuchMethodException: com.hzone.db.ao.common.INBADataAO.<init>()
+	at java.lang.Class.getConstructor0(Class.java:3082) ~[?:1.8.0_66]
+	at java.lang.Class.newInstance(Class.java:412) ~[?:1.8.0_66]
+	at com.hzone.server.instance.InstanceFactory.getInstance(InstanceFactory.java:211) ~[classes/:?]
+	... 5 more
+2019-01-07 12:00:28,250:ERROR main (JedisUtil.java:315) - Redis Error->key[Local_Config_v6_skillF:\nba\config_01\游戏配置\游戏配置文档\Skill.xlsx],stack[redis.clients.jedis.exceptions.JedisConnectionException: Could not get a resource from the pool]
+2019-01-07 12:00:29,974:ERROR main (JedisUtil.java:213) - Redis Error -> key[Local_Config_v6_skillF:\nba\config_01\游戏配置\游戏配置文档\Skill.xlsx], stack[redis.clients.jedis.exceptions.JedisConnectionException: Could not get a resource from the pool]
+2019-01-07 15:02:19,202:ERROR main (JedisUtil.java:315) - Redis Error->key[Local_Config_v6_skillF:\nba\config_01\游戏配置\游戏配置文档\Skill.xlsx],stack[redis.clients.jedis.exceptions.JedisConnectionException: Could not get a resource from the pool]
+2019-01-07 15:02:20,926:ERROR main (JedisUtil.java:213) - Redis Error -> key[Local_Config_v6_skillF:\nba\config_01\游戏配置\游戏配置文档\Skill.xlsx], stack[redis.clients.jedis.exceptions.JedisConnectionException: Could not get a resource from the pool]
