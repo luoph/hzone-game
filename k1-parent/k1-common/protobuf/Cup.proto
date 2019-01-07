@@ -1,0 +1,8 @@
+package com.hzone.proto;
+		
+option java_outer_classname = "CupPB";
+
+message CupProto {
+	optional int32 level = 2;
+	optional int32 name = 3;
+}
